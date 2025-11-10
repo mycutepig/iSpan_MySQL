@@ -136,3 +136,24 @@ values
 select * from user_account;
 
 -- practice
+create table my_product(
+product_id int primary key auto_increment,
+product_name varchar(100),
+product_price int
+);
+
+desc my_product;
+
+alter table my_product auto_increment 21;
+
+insert into my_product
+(product_name, product_price)
+values
+("Americano", 80),
+("Latte", 110),
+("Cappuccino", 120),
+("Cheesecake", 150),
+("Croissant", 65);
+
+select * from my_product;
+
