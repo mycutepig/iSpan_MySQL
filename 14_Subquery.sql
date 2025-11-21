@@ -12,6 +12,7 @@ select pclass, name, age
 from passengers
 where age > (select max(age) from passengers
 where pclass = 2);
+
 # better syntax
 select pclass, name, age
 from passengers
